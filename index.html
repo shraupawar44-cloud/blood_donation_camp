@@ -17,21 +17,19 @@
   </nav>
 
   <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1 class="foundation-name">अजितदादा यूथ फाउंडेशन</h1>
-
-      <div class="hero-event-badge">
-        <span class="badge-icon">🩸</span>
-        <h2>भव्य रक्तदान शिबिर</h2>
-        <span class="badge-icon">🩸</span>
-      </div>
-
-      <p class="hero-tagline">❤️ चला, रक्तदान करूया... जीवनाला नवी आशा देऊया! ❤️</p>
-      <p class="hero-subtext">Donate Blood, Save Lives | Your Support Matters</p>
-      <a href="#register" class="btn-primary">Register as Donor</a>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 class="foundation-title">Ajit Dada Youth Foundation</h1>
+    
+    <div class="event-badge">
+      <h2>🩸 भव्य रक्तदान शिबिर 🩸</h2>
     </div>
-  </header>
+
+    <p class="hero-tagline">❤️ चला, रक्तदान करूया... जीवनाला नवी आशा देऊया! ❤️</p>
+    <p class="hero-subtext">Donate Blood, Save Lives | Your Support Matters</p>
+    <a href="#register" class="btn-primary">Register as Donor</a>
+  </div>
+</header>
 
   <section class="search-section">
     <h2>Find Emergency Blood Donors</h2>
@@ -53,19 +51,17 @@
 
     <div id="searchResultsContainer">
       <p class="search-instruction">Use the search options above to find registered emergency donors.</p>
-      <div class="table-responsive">
-        <table id="publicDonorTable" class="hidden">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Blood Group</th>
-              <th>Location</th>
-              <th>Contact Phone</th>
-            </tr>
-          </thead>
-          <tbody id="publicDonorTableBody"></tbody>
-        </table>
-      </div>
+      <table id="publicDonorTable" class="hidden">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Blood Group</th>
+            <th>Location</th>
+            <th>Contact Phone</th>
+          </tr>
+        </thead>
+        <tbody id="publicDonorTableBody"></tbody>
+      </table>
     </div>
   </section>
 
@@ -120,20 +116,18 @@
     <h2>Admin Dashboard: All Registered Donor Records</h2>
     <p class="total-count">Total Donors Registered: <span id="totalDonorsCount">0</span></p>
     
-    <div class="table-responsive">
-      <table id="adminDonorTable">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Full Name</th>
-            <th>Phone Number</th>
-            <th>Blood Group</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody id="adminDonorTableBody"></tbody>
-      </table>
-    </div>
+    <table id="adminDonorTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Full Name</th>
+          <th>Phone Number</th>
+          <th>Blood Group</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody id="adminDonorTableBody"></tbody>
+    </table>
   </section>
 
   <section class="campaign-posters">
@@ -143,7 +137,7 @@
         <img src="media/poster1.jpeg" alt="Blood Donation Poster 1" />
       </div>
       <div class="image-card">
-        <img src="media/poster2.jpeg" alt="Blood Donation Poster 2" />
+        <img src="media/poster2.jpeg" alt="Blood Donation Poster 2" height="150"/>
       </div>
     </div>
   </section>
@@ -196,7 +190,7 @@
     </form>
   </section>
 
-  <footer>
+ <footer>
     <p>© Ajitdada Youth Foundation - Emergency Blood Donation Drive</p>
     
     <div class="footer-branding">
