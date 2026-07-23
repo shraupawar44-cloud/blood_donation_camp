@@ -50,29 +50,99 @@ body {
 }
 
 /* Hero Section */
+/* Responsive Hero Section */
 .hero {
-  background: linear-gradient(rgba(217, 4, 41, 0.85), rgba(141, 2, 31, 0.9)),
-              url('https://images.unsplash.com/photo-1615461066841-6116e61058f4') center/cover;
+  position: relative;
+  background: linear-gradient(rgba(180, 0, 30, 0.9), rgba(100, 0, 20, 0.92)),
+              url('https://images.unsplash.com/photo-1615461066841-6116e61058f4') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 50px 15px 60px;
+  width: 100%;
 }
 
-.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
-.hero h2 { font-size: 1.8rem; margin-bottom: 15px; color: #ffccd5; }
-.hero p { font-size: 1.2rem; margin-bottom: 25px; }
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.foundation-title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Flexible Yellow Banner Box */
+.event-badge {
+  display: inline-block;
+  border: 3px solid #ffcc00;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin: 10px auto 20px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.event-badge h2 {
+  font-size: clamp(1.2rem, 4vw, 1.8rem);
+  color: #ffea79;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.hero-tagline {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.hero-subtext {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  margin-bottom: 25px;
+}
 
 .btn-primary {
   display: inline-block;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #d90429;
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
+.btn-primary:hover {
+  background-color: #ffea79;
+  color: #000;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .hero {
+    padding: 35px 10px 45px;
+  }
+  
+  .event-badge {
+    padding: 10px 14px;
+    border-width: 2px;
+  }
+  
+  .btn-primary {
+    width: 85%;
+    padding: 12px 0;
+  }
+}
 .btn-primary:hover { background-color: #ffccd5; }
 
 /* Public Search Section */
@@ -354,7 +424,7 @@ footer {
   text-transform: uppercase;
   background: linear-gradient(90deg, #ffffff, #ff4d6d, #ffffff);
   background-size: 200% auto;
-  -webkit-background-clip: text;
+ 
   -webkit-text-fill-color: transparent;
   animation: shine 3s linear infinite;
 }
@@ -378,4 +448,25 @@ footer {
   to {
     background-position: 200% center;
   }
+}
+.foundation-name {
+  /* 1. Define the background gradient */
+  background: linear-gradient(
+    180deg, 
+    #FFF6CD 0%, 
+    #FCE055 25%, 
+    #D4AF37 50%, 
+    #996515 75%, 
+    #FFE680 100%
+  );
+
+  /* 2. Standard property first */
+  background-clip: text;
+  
+  /* 3. WebKit prefix for Safari & Chrome */
+  -webkit-background-clip: text;
+
+  /* 4. Make text transparent so gradient shows through */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
