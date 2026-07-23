@@ -1,6 +1,4 @@
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="mr">
 <head>
   <meta charset="UTF-8" />
@@ -21,17 +19,16 @@
   <header class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <h1> Ajit Dada Youth Foundation</h1>
-     
-     <h2>
-           🩸 भव्य रक्तदान शिबिर 🩸
-     </h2>
-     
-          
-          <h2>❤️ चला, रक्तदान करूया...
-          जीवनाला नवी आशा देऊया! ❤️
-        </h2>
-      <p>Donate Blood, Save Lives | Your Support Matters</p>
+      <h1 class="foundation-name">अजितदादा यूथ फाउंडेशन</h1>
+
+      <div class="hero-event-badge">
+        <span class="badge-icon">🩸</span>
+        <h2>भव्य रक्तदान शिबिर</h2>
+        <span class="badge-icon">🩸</span>
+      </div>
+
+      <p class="hero-tagline">❤️ चला, रक्तदान करूया... जीवनाला नवी आशा देऊया! ❤️</p>
+      <p class="hero-subtext">Donate Blood, Save Lives | Your Support Matters</p>
       <a href="#register" class="btn-primary">Register as Donor</a>
     </div>
   </header>
@@ -56,17 +53,19 @@
 
     <div id="searchResultsContainer">
       <p class="search-instruction">Use the search options above to find registered emergency donors.</p>
-      <table id="publicDonorTable" class="hidden">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Blood Group</th>
-            <th>Location</th>
-            <th>Contact Phone</th>
-          </tr>
-        </thead>
-        <tbody id="publicDonorTableBody"></tbody>
-      </table>
+      <div class="table-responsive">
+        <table id="publicDonorTable" class="hidden">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Blood Group</th>
+              <th>Location</th>
+              <th>Contact Phone</th>
+            </tr>
+          </thead>
+          <tbody id="publicDonorTableBody"></tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -112,106 +111,7 @@
       <form id="loginForm">
         <input type="text" id="username" placeholder="Username" required />
         <input type="password" id="password" placeholder="Password" required />
-        <button type="submit" class="btn-submit">Login</button>
-      </form>
-    </div>
-  </div>
+        <button type="submit" class="
 
-  <section id="adminDashboard" class="admin-section hidden">
-    <h2>Admin Dashboard: All Registered Donor Records</h2>
-    <p class="total-count">Total Donors Registered: <span id="totalDonorsCount">0</span></p>
-    
-    <table id="adminDonorTable">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Full Name</th>
-          <th>Phone Number</th>
-          <th>Blood Group</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody id="adminDonorTableBody"></tbody>
-    </table>
-  </section>
-
-  <section class="campaign-posters">
-  <h2>Event Banners & Posters</h2>
-  <div class="image-grid">
-    <div class="image-card">
-      <img src="poster1.jpeg" alt="Blood Donation Poster 1">
-    </div>
-
-    <div class="image-card">
-      <img src="poster2.jpeg" alt="Blood Donation Poster 2">
-    </div>
-  </div>
-</section>
-
-<section class="campaign-videos">
-  <h2>Campaign Videos & Coverage</h2>
-
-  <div class="video-grid">
-
-    <div class="video-card">
-      <video controls width="100%">
-        <source src="video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p>Campaign Highlights 1</p>
-    </div>
-
-    <div class="video-card">
-      <video controls width="100%">
-        <source src="video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p>Campaign Highlights 2</p>
-    </div>
-
-    <div class="video-card">
-      <video controls width="100%">
-        <source src="video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p>Awareness Drive Video</p>
-    </div>
-
-  </div>
-</section>
-
-  <section id="register" class="registration-section">
-    <h2>Emergency Donor Registration</h2>
-    <form id="donorForm">
-      <input type="text" id="fullName" placeholder="Full Name" required />
-      <input type="tel" id="phone" placeholder="Phone Number" required />
-      <select id="bloodGroup" required>
-        <option value="">Select Blood Group</option>
-        <option value="A+">A+</option>
-        <option value="A-">A-</option>
-        <option value="B+">B+</option>
-        <option value="B-">B-</option>
-        <option value="O+">O+</option>
-        <option value="O-">O-</option>
-        <option value="AB+">AB+</option>
-        <option value="AB-">AB-</option>
-      </select>
-      <input type="text" id="location" placeholder="City / Area" required />
-      <button type="submit" class="btn-submit">Register Now</button>
-    </form>
-  </section>
-
- <footer>
-    <p>© Ajitdada Youth Foundation - Emergency Blood Donation Drive</p>
-    
-    <div class="footer-branding">
-      <span>Provided by</span>
-      <a href="#" class="ascent-badge">
-        <span class="ascent-text">Ascent Softech</span>
-      </a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+ 
+  
