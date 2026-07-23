@@ -386,6 +386,7 @@ table tr:nth-child(even) {
 }
 
 /* Powerful Footer & Ascent Softech Branding */
+/* Footer Container */
 footer {
   text-align: center;
   padding: 35px 20px;
@@ -405,63 +406,21 @@ footer {
   color: #e0e0e0;
 }
 
-/* High-Impact Badge for Ascent Softech */
+/* Static Glowing Badge (No Hover / No Animation) */
 .ascent-badge {
   display: inline-block;
   padding: 8px 18px;
-  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  background: #1a1a1a;
   border: 2px solid #d90429;
   border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 0 15px rgba(217, 4, 41, 0.4);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 12px rgba(217, 4, 41, 0.5);
+  cursor: default;
 }
 
 .ascent-text {
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #ffffff, #ff4d6d, #ffffff);
-  background-size: 200% auto;
- 
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s linear infinite;
-}
-
-/* Hover Effect: Glowing Boost */
-
-
-.ascent-badge:hover .ascent-text {
-  background: none;
-  -webkit-text-fill-color: #ffffff;
   color: #ffffff;
-}
-
-/* Shimmer Animation for Text */
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
-}
-.foundation-name {
-  /* 1. Define the background gradient */
-  background: linear-gradient(
-    180deg, 
-    #FFF6CD 0%, 
-    #FCE055 25%, 
-    #D4AF37 50%, 
-    #996515 75%, 
-    #FFE680 100%
-  );
-
-  /* 2. Standard property first */
-  background-clip: text;
-  
-  /* 3. WebKit prefix for Safari & Chrome */
-  -webkit-background-clip: text;
-
-  /* 4. Make text transparent so gradient shows through */
-  -webkit-text-fill-color: transparent;
-  color: transparent;
 }
